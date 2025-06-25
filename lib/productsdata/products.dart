@@ -1,0 +1,40 @@
+
+import 'product_model.dart'; //  Import the Product class
+
+final List<Product> products = [
+  Product(
+    name: 'Carrots',
+    price: '\$2.00',
+    imagePath: 'assets/images/carrots.jpg',
+  ),
+  Product(
+    name: 'Tomatoes',
+    price: '\$3.50',
+    imagePath: 'assets/images/tomatos.jpg',
+  ),
+  Product(
+    name: 'Onions',
+    price: '\$4.50',
+    imagePath: 'assets/images/onions.jpg',
+  ),
+  Product(
+    name: "Bendakaya", 
+    price: "\$30",
+    imagePath: "assets/images/bendakaya.webp"
+  ),
+  Product(
+    name: "Potatoes", 
+    price: "\$33", 
+    imagePath: "assets/images/potatoes.jpg"
+  ),
+  Product(
+    name: "Greenchilli",
+    price: "\$45",
+    imagePath: "assets/images/greenchilli.jpg",
+  ),
+  Product(
+    name: "Vankaya", 
+    price: "\$41", 
+    imagePath: "assets/images/greenbrinjal.webp"
+  ),
+];
