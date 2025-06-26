@@ -94,8 +94,8 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
           preferredSize: Size.fromHeight(1.0),
           child: Divider(
             height: 1,
-            thickness: 2,
-            color: Color.fromARGB(255, 77, 76, 76),
+            thickness: 1,
+            color: Color.fromARGB(255, 211, 210, 210),
           ),
         ),
       )

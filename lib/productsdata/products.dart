@@ -15,12 +15,12 @@ final List<Product> products = [
   Product(
     name: 'Onions',
     price: '\$4.50',
-    imagePath: 'assets/images/onions.jpg',
+    imagePath: 'assets/images/onions.webp',
   ),
   Product(
     name: "Bendakaya", 
     price: "\$30",
-    imagePath: "assets/images/bendakaya.webp"
+    imagePath: "assets/images/bendakaya.jpg"
   ),
   Product(
     name: "Potatoes", 
@@ -30,11 +30,11 @@ final List<Product> products = [
   Product(
     name: "Greenchilli",
     price: "\$45",
-    imagePath: "assets/images/greenchilli.jpg",
+    imagePath: "assets/images/greenchilli.avif",
   ),
   Product(
     name: "Vankaya", 
     price: "\$41", 
-    imagePath: "assets/images/greenbrinjal.webp"
+    imagePath: "assets/images/vankaya.webp"
   ),
 ];
