@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
         itemBuilder: (context, index) {
           final Product product = products[index]; 
 
-          return Card(
+          return  Card(
             elevation: 3,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
@@ -72,3 +72,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+

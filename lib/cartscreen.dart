@@ -6,7 +6,7 @@ class CartScreen extends StatelessWidget {
     children: [
       AppBar(title:
        Center(
-         child: const Text('MY Cart',
+         child: const Text('My Cart',
          style: TextStyle(
           fontSize: 20,
           fontWeight: FontWeight.bold),
@@ -21,6 +21,7 @@ class CartScreen extends StatelessWidget {
             thickness: 1,
             color: Color(0xFFE0E0E0), // light grey border
           ),
+          Center(child: Text("Items"),)
     ],
   ),
  );

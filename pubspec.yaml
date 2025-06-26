@@ -61,7 +61,7 @@ flutter:
   assets:
    - assets/images/carrots.jpg
    - assets/images/onions.webp
-   - assets/images/tomatos.jpg
+   - assets/images/tomatoes.png
    - assets/images/greenchilli.avif
    - assets/images/potatoes.jpg
    - assets/images/bendakaya.jpg

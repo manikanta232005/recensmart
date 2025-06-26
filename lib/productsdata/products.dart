@@ -10,7 +10,7 @@ final List<Product> products = [
   Product(
     name: 'Tomatoes',
     price: '\$3.50',
-    imagePath: 'assets/images/tomatos.jpg',
+    imagePath: 'assets/images/tomatoes.png',
   ),
   Product(
     name: 'Onions',
