@@ -100,8 +100,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
         ),
       )
     : null,
-
-
       body: IndexedStack(
         index: _selectedIndex,
         children: _screens,
