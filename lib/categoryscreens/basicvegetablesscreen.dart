@@ -1,29 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:recensmart/categorycard.dart';
+import 'package:recensmart/productsdata/products.dart';
 class BasicVegetablesScreen extends StatelessWidget {
   const BasicVegetablesScreen({super.key});
 
-  final List<Map<String, String>> products = const [
-    {
-      'image': 'assets/basic_veg1.png',
-      'name': 'Potato',
-      'weight': '1 kg',
-      'price': '₹30',
-    },
-    {
-      'image': 'assets/basic_veg2.png',
-      'name': 'Onion',
-      'weight': '1 kg',
-      'price': '₹40',
-    },
-    {
-      'image': 'assets/basic_veg3.png',
-      'name': 'Tomato',
-      'weight': '1 kg',
-      'price': '₹35',
-    },
-  ];
-
+  final List<Map<String, String>> products = BasicVegetablesProductsList.productsList;
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,8 +15,8 @@ class BasicVegetablesScreen extends StatelessWidget {
         itemCount: products.length,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          crossAxisSpacing: 8,
-          mainAxisSpacing: 8,
+          crossAxisSpacing: 2,
+          mainAxisSpacing: 2,
           childAspectRatio: 0.75,
         ),
         itemBuilder: (context, index) {

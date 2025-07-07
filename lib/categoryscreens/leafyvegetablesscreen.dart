@@ -1,29 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:recensmart/categorycard.dart';
+import 'package:recensmart/productsdata/products.dart';
 class LeafyVegetablesScreen extends StatelessWidget {
   const LeafyVegetablesScreen({super.key});
 
-  final List<Map<String, String>> products = const [
-    {
-      'image': 'assets/leafy_veg1.png',
-      'name': 'Spinach',
-      'weight': '250 g',
-      'price': '₹15',
-    },
-    {
-      'image': 'assets/leafy_veg2.png',
-      'name': 'Fenugreek',
-      'weight': '250 g',
-      'price': '₹20',
-    },
-    {
-      'image': 'assets/leafy_veg3.png',
-      'name': 'Coriander',
-      'weight': '100 g',
-      'price': '₹10',
-    },
-  ];
-
+  final List<Map<String, String>> products = LeafyVegetablesProductList.productsList;
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,28 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:recensmart/categorycard.dart';
+import 'package:recensmart/productsdata/products.dart';
 class SeasonalItemsScreen extends StatelessWidget {
   const SeasonalItemsScreen({super.key});
 
-  final List<Map<String, String>> products = const [
-    {
-      'image': 'assets/seasonal1.png',
-      'name': 'Mango',
-      'weight': '1 kg',
-      'price': '₹100',
-    },
-    {
-      'image': 'assets/seasonal2.png',
-      'name': 'Lychee',
-      'weight': '500 g',
-      'price': '₹80',
-    },
-    {
-      'image': 'assets/seasonal3.png',
-      'name': 'Watermelon',
-      'weight': '1 pc',
-      'price': '₹60',
-    },
-  ];
+  final List<Map<String, String>> products = SeasonalItemsProductList.productsList;
 
   @override
   Widget build(BuildContext context) {
