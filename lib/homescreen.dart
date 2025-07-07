@@ -287,7 +287,7 @@ class CategoryRow extends StatelessWidget {
             text: category['text']!,
           ),
         );
-      }).toList(),
+      }).toList(), 
     );
   }
 }
