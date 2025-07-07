@@ -73,12 +73,12 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.green,
 
       // Conditional AppBar
      appBar: _selectedIndex == 0
     ? AppBar(
-        backgroundColor: const Color.fromARGB(255, 175, 236, 178),
+        backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.location_on, color: Colors.black),

@@ -69,7 +69,8 @@ flutter:
    - assets/images/promobanner.jpg
    - assets/images/basicvegetablescategory.jpg
    - assets/images/leafyvegetables.jpg
-
+   - assets/images/morningslotbanner.png
+   - assets/images/seasonalcategory.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
