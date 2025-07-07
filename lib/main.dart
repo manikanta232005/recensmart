@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recensmart/locationscreen.dart';
+import 'package:recensmart/ordersscreen.dart';
 import 'package:recensmart/profilescreen.dart';
 import 'package:recensmart/cartscreen.dart';
 import 'package:recensmart/wishlistscreen.dart';
@@ -39,6 +40,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     HomeScreen(),
     WishlistScreen(),
     CartScreen(),
+    OrderScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -105,28 +107,48 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
         children: _screens,
       ),
 
-      bottomNavigationBar: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-            const Divider(
-              height: 1,
-              thickness: 1,
-              color: Color(0xFFE0E0E0),
-            ),
-          BottomNavigationBar(
-            currentIndex: _selectedIndex,
-            onTap: _onItemTapped,
-            backgroundColor: Colors.white,
-            selectedItemColor: Colors.green,
-            unselectedItemColor: Colors.black,
-            items: const [
-              BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-              BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: 'Wishlist'),
-              BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), label: 'Cart'),
-            ],
-          ),
-        ],
-      ),
-    );
+          bottomNavigationBar: Column(
+  mainAxisSize: MainAxisSize.min,
+  children: [
+    const Divider(
+      height: 1,
+      thickness: 1,
+      color: Color(0xFFE0E0E0),
+    ),
+    BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
+      currentIndex: _selectedIndex,
+      onTap: _onItemTapped,
+      backgroundColor: Colors.white,
+      selectedItemColor: Colors.green,
+      unselectedItemColor: Colors.black,
+      selectedLabelStyle: const TextStyle(fontSize: 12),
+      unselectedLabelStyle: const TextStyle(fontSize: 12),
+      items: const [
+        BottomNavigationBarItem(
+          icon: Icon(Icons.home),
+          label: 'Home',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.favorite_border),
+          label: 'Wishlist',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.list_alt),
+          label: 'Orders',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.shopping_cart),
+          label: 'Cart',
+        ),
+      ],
+    ),
+  ],
+),
+
+          );
+        
+      
+    
   }
 }
