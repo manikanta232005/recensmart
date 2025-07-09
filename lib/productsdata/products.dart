@@ -3,6 +3,7 @@ class BasicVegetablesProductsList{
   
    static const List<Map<String, dynamic>> productsList =  [
     {
+      'id' : 'potato',
       'image': 'assets/images/potatoes.jpg',
       'name': 'Potato',
       'variants': [
@@ -12,25 +13,29 @@ class BasicVegetablesProductsList{
          ],
     },
    {
-  'image': 'assets/images/onions.webp',
-  'name': 'Onions',
-  'variants': [
-    {'weight': '1 kg', 'price': '₹33'},
-    {'weight': '2 kg', 'price': '₹66'},
-    {'weight': '500 gm', 'price': '₹16.50'},
-  ],
-},
-
-    {
-      'image': 'assets/images/tomatoes.png',
-      'name': 'Tomato',
-      'variants': [
-    {'weight': '1 kg', 'price': '₹33'},
-    {'weight': '2 kg', 'price': '₹66'},
-    {'weight': '500 gm', 'price': '₹16.50'},
-  ],
+     'id' : 'onions',
+     'image': 'assets/images/onions.webp',
+     'name': 'Onions',
+     'variants': [
+              {'weight': '1 kg', 'price': '₹33'},
+              {'weight': '2 kg', 'price': '₹66'},
+              {'weight': '500 gm', 'price': '₹16.50'},
+            ],
     },
+       {
+     'id' : 'tomato',
+     'image': 'assets/images/tomatoes.png',
+     'name': 'Tomato',
+     'variants': [
+              {'weight': '1 kg', 'price': '₹33'},
+              {'weight': '2 kg', 'price': '₹66'},
+              {'weight': '500 gm', 'price': '₹16.50'},
+            ],
+    },
+
+    
     {
+      'id' : 'greenchilli',
       'image': 'assets/images/greenchilli.avif',
       'name': 'Greenchilli',
       'variants': [
@@ -40,6 +45,7 @@ class BasicVegetablesProductsList{
   ],
     },
     {
+      'id' : 'carrots',
       'image': 'assets/images/carrots.jpg',
       'name': 'Carrots',
       'variants': [
@@ -49,6 +55,7 @@ class BasicVegetablesProductsList{
   ],
     },
     {
+      'id' : 'vankaya',
       'image': 'assets/images/vankaya.webp',
       'name': 'vankaya',
      'variants': [
@@ -58,6 +65,7 @@ class BasicVegetablesProductsList{
   ],
     },
     {
+      'id' : 'bendakaya',
       'image': 'assets/images/bendakaya.jpg',
       'name': 'Bendakaya',
      'variants': [
@@ -73,6 +81,7 @@ class LeafyVegetablesProductList{
   
   static const  List<Map<String, dynamic>> productsList =  [
     {
+      'id' : 'spinach',
       'image': 'assets/leafy_veg1.png',
       'name': 'Spinach',
       'variants': [
@@ -82,6 +91,7 @@ class LeafyVegetablesProductList{
   ],
     },
     {
+      'id' : 'fenugreek',
       'image': 'assets/leafy_veg2.png',
       'name': 'Fenugreek',
      'variants': [
@@ -91,6 +101,7 @@ class LeafyVegetablesProductList{
   ],
     },
     {
+      'id' : 'coriander',
       'image': 'assets/leafy_veg3.png',
       'name': 'Coriander',
      'variants': [
@@ -105,6 +116,7 @@ class SeasonalItemsProductList{
   SeasonalItemsProductList();
   static const  List<Map<String, dynamic>> productsList =  [
     {
+      'id' : 'mango',
       'image': 'assets/seasonal1.png',
       'name': 'Mango',
      'variants': [
@@ -114,6 +126,7 @@ class SeasonalItemsProductList{
   ],
     },
     {
+      'id' : 'lychee',
       'image': 'assets/seasonal2.png',
       'name': 'Lychee',
      'variants': [
@@ -123,6 +136,7 @@ class SeasonalItemsProductList{
   ],
     },
     {
+      'id' : 'watermelon',
       'image': 'assets/seasonal3.png',
       'name': 'Watermelon',
      'variants': [

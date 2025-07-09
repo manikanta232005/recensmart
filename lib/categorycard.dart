@@ -294,8 +294,6 @@ class ProductCard extends StatelessWidget {
     },
   ),
 ),
-
-
             ],
           ),
           Padding(
