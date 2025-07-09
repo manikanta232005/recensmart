@@ -66,12 +66,14 @@ class LeafyVegetablesScreen extends StatelessWidget {
               : null;
 
           return ProductCard(
-            image: product['image'] ?? '',
-            name: product['name'] ?? '',
-            weight: product['weight'] ?? '',
-            price: product['price'] ?? '',
-            variants: variants,
-          );
+  id: '${product['name']}_${product['weight'] ?? ''}',
+  image: product['image'] ?? '',
+  name: product['name'] ?? '',
+  weight: product['weight'] ?? '',
+  price: product['price'] ?? '',
+  variants: variants,
+);
+
         },
       ),
     );

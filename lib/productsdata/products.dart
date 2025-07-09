@@ -13,7 +13,7 @@ class BasicVegetablesProductsList{
     },
    {
   'image': 'assets/images/onions.webp',
-  'name': 'Onion Red',
+  'name': 'Onions',
   'variants': [
     {'weight': '1 kg', 'price': '₹33'},
     {'weight': '2 kg', 'price': '₹66'},

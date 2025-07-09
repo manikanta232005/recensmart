@@ -5,10 +5,23 @@ import 'package:recensmart/profilescreen.dart';
 import 'package:recensmart/cartscreen.dart';
 import 'package:recensmart/wishlistscreen.dart';
 import 'package:recensmart/homescreen.dart';
+import 'package:provider/provider.dart';
+import 'package:recensmart/cart_model.dart';
+import 'package:recensmart/favorite_model.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => CartModel()),
+        ChangeNotifierProvider(create: (_) => FavoriteModel()),
+      ],
+      child: MyApp(),
+    ),
+  );
 }
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -39,8 +52,9 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   final List<Widget> _screens = const [
     HomeScreen(),
     WishlistScreen(),
-    CartScreen(),
     OrderScreen(),
+    CartScreen(),
+    
   ];
 
   void _onItemTapped(int index) {
@@ -145,10 +159,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     ),
   ],
 ),
-
           );
-        
-      
-    
   }
 }

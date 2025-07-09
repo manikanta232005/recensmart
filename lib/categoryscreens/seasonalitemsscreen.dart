@@ -62,13 +62,15 @@ class SeasonalItemsScreen extends StatelessWidget {
               ? List<Map<String, String>>.from(product['variants'])
               : null;
 
-          return ProductCard(
-            image: product['image'] ?? '',
-            name: product['name'] ?? '',
-            weight: product['weight'] ?? '',
-            price: product['price'] ?? '',
-            variants: variants,
-          );
+         return ProductCard(
+  id: '${product['name']}_${product['weight'] ?? ''}',
+  image: product['image'] ?? '',
+  name: product['name'] ?? '',
+  weight: product['weight'] ?? '',
+  price: product['price'] ?? '',
+  variants: variants,
+);
+
         },
       ),
     );
