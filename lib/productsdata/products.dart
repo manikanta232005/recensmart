@@ -8,8 +8,6 @@ class BasicVegetablesProductsList{
       'name': 'Potato',
       'variants': [
            {'weight': '1 kg', 'price': '₹33'},
-           {'weight': '2 kg', 'price': '₹66'},
-           {'weight': '500 gm', 'price': '₹16.50'},
          ],
     },
    {
@@ -19,7 +17,6 @@ class BasicVegetablesProductsList{
      'variants': [
               {'weight': '1 kg', 'price': '₹33'},
               {'weight': '2 kg', 'price': '₹66'},
-              {'weight': '500 gm', 'price': '₹16.50'},
             ],
     },
        {
