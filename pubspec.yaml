@@ -73,6 +73,24 @@ flutter:
    - assets/images/leafyvegetables.jpg
    - assets/images/morningslotbanner.png
    - assets/images/seasonalcategory.png
+   - assets/images/beerakaya.jpg
+   - assets/images/beetroot.jpeg
+   - assets/images/cabbage.jpg
+   - assets/images/capsicum.jpg
+   - assets/images/cauliflower.jpg
+   - assets/images/chamadumpa.webp
+   - assets/images/chikkudukaya.webp
+   - assets/images/garlic.jpg
+   - assets/images/ginger.jpg
+   - assets/images/goruchikkudu.jpeg
+   - assets/images/lemons.webp
+   - assets/images/sweetpotato.jpg
+   - assets/images/curryleaves.jpeg
+   - assets/images/gongura.png
+   - assets/images/palakura.jpeg
+   - assets/images/mushrooms.jpg
+   - assets/images/thotakura.webp
+   
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -71,16 +71,29 @@ class BasicVegetablesProductsList{
     {'weight': '500 gm', 'price': '₹16.50'},
   ],
     },
-  ];
-}
-class LeafyVegetablesProductList{
-  LeafyVegetablesProductList();
-  
-  static const  List<Map<String, dynamic>> productsList =  [
     {
-      'id' : 'spinach',
-      'image': 'assets/leafy_veg1.png',
-      'name': 'Spinach',
+      'id' : 'garlic',
+      'image': 'assets/images/garlic.jpg',
+      'name': 'vellulli-(garlic)',
+      'variants': [
+    {'weight': '500 gm', 'price': '₹33'},
+    {'weight': '250 gm', 'price': '₹66'},
+    {'weight': '150 gm', 'price': '₹16.50'},
+  ],
+    },
+    {
+      'id' : 'lemons',
+      'image': 'assets/images/lemons.webp',
+      'name': 'Lemons',
+      'variants': [
+    {'weight': '12 Pc', 'price': '₹33'},
+    {'weight': '6 Pc', 'price': '₹66'},
+  ],
+    },
+    {
+      'id' : 'sweetpotatoes',
+      'image': 'assets/images/sweetpotato.jpg',
+      'name': 'Sweetpotatoes',
       'variants': [
     {'weight': '1 kg', 'price': '₹33'},
     {'weight': '2 kg', 'price': '₹66'},
@@ -88,23 +101,110 @@ class LeafyVegetablesProductList{
   ],
     },
     {
-      'id' : 'fenugreek',
-      'image': 'assets/leafy_veg2.png',
-      'name': 'Fenugreek',
-     'variants': [
+      'id' : 'chamadumpa',
+      'image': 'assets/images/chamadumpa.webp',
+      'name': 'Chamadumpa',
+      'variants': [
     {'weight': '1 kg', 'price': '₹33'},
-    {'weight': '2 kg', 'price': '₹66'},
     {'weight': '500 gm', 'price': '₹16.50'},
   ],
     },
     {
-      'id' : 'coriander',
-      'image': 'assets/leafy_veg3.png',
-      'name': 'Coriander',
-     'variants': [
+      'id' : 'goruchikkudu',
+      'image': 'assets/images/goruchikkudu.jpeg',
+      'name': 'Goruchikkudu',
+      'variants': [
     {'weight': '1 kg', 'price': '₹33'},
-    {'weight': '2 kg', 'price': '₹66'},
+    {'weight': '500 gm', 'price': '₹66'},
+    {'weight': '250 gm', 'price': '₹16.50'},
+  ],
+    },
+    {
+      'id' : 'chikkudukaya',
+      'image': 'assets/images/chikkudukaya.webp',
+      'name': 'Chikkudukaya',
+      'variants': [
+    {'weight': '1 kg', 'price': '₹33'},
+    {'weight': '500 gm', 'price': '₹66'},
+    {'weight': '250 gm', 'price': '₹16.50'},
+  ],
+    },
+    {
+      'id' : 'cauliflower',
+      'image': 'assets/images/cauliflower.jpg',
+      'name': 'Cauliflower',
+      'variants': [
+    {'weight': '1 pc(800gm - 1000gm)', 'price': '₹33'},
+  ],
+    },
+    {
+      'id' : 'capsicum',
+      'image': 'assets/images/capsicum.jpg',
+      'name': 'Capsicum.jpg',
+      'variants': [
+    {'weight': '1 kg', 'price': '₹33'},
     {'weight': '500 gm', 'price': '₹16.50'},
+  ],
+    },
+    {
+      'id' : 'cabbage',
+      'image': 'assets/images/cabbage.jpg',
+      'name': 'Cabbage',
+      'variants': [
+    {'weight': '1Pc(800gm -1000gm)', 'price': '₹33'},
+  ],
+    },
+    {
+      'id' : 'beerakaya',
+      'image': 'assets/images/beerakaya.jpg',
+      'name': 'Beerakaya',
+      'variants': [
+    {'weight': '500 gm', 'price': '₹16.50'},
+    {'weight': '1 kg', 'price': '₹33'},
+  ],
+    },
+        {
+      'id' : 'beetroot',
+      'image': 'assets/images/beetroot.jpeg',
+      'name': 'Beetroot',
+      'variants': [
+    {'weight': '1 kg', 'price': '₹33'},
+    {'weight': '500 gm', 'price': '₹66'},
+    {'weight': '250 gm', 'price': '₹16.50'},
+  ],
+    },
+    
+  ];
+}
+class LeafyVegetablesProductList{
+  LeafyVegetablesProductList();
+  
+  static const  List<Map<String, dynamic>> productsList =  [
+    {
+      'id' : 'thotakura',
+      'image': 'assets/images/thotakura.webp',
+      'name': 'Thotakura',
+      'variants': [
+    {'weight': '1 bunch', 'price': '₹33'},
+    {'weight': '2 bunch', 'price': '₹66'},
+  ],
+    },
+    {
+      'id' : 'palakura',
+      'image': 'assets/images/palakura.jpeg',
+      'name': 'Palakura',
+     'variants': [
+    {'weight': '1 bunch', 'price': '₹33'},
+    {'weight': '2 bunch', 'price': '₹66'},
+  ],
+    },
+    {
+      'id' : 'curryleaves',
+      'image': 'assets/images/curryleaves.jpeg',
+      'name': 'Curryleaves',
+     'variants': [
+    {'weight': '1 bunch', 'price': '₹33'},
+    {'weight': '2 bunch', 'price': '₹66'},
   ],
     },
   ];
@@ -113,34 +213,15 @@ class SeasonalItemsProductList{
   SeasonalItemsProductList();
   static const  List<Map<String, dynamic>> productsList =  [
     {
-      'id' : 'mango',
-      'image': 'assets/seasonal1.png',
-      'name': 'Mango',
+      'id' : 'mushrooms',
+      'image': 'assets/images/mushrooms.jpg',
+      'name': 'Mushrooms',
      'variants': [
     {'weight': '1 kg', 'price': '₹33'},
     {'weight': '2 kg', 'price': '₹66'},
     {'weight': '500 gm', 'price': '₹16.50'},
   ],
     },
-    {
-      'id' : 'lychee',
-      'image': 'assets/seasonal2.png',
-      'name': 'Lychee',
-     'variants': [
-    {'weight': '1 kg', 'price': '₹33'},
-    {'weight': '2 kg', 'price': '₹66'},
-    {'weight': '500 gm', 'price': '₹16.50'},
-  ],
-    },
-    {
-      'id' : 'watermelon',
-      'image': 'assets/seasonal3.png',
-      'name': 'Watermelon',
-     'variants': [
-    {'weight': '1 kg', 'price': '₹33'},
-    {'weight': '2 kg', 'price': '₹66'},
-    {'weight': '500 gm', 'price': '₹16.50'},
-  ],
-    },
+    
   ];
 }
